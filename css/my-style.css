@@ -1,0 +1,14 @@
+.show-popup {
+	display: block;
+}
+
+.popup-content {
+	z-index: 10;
+}
+
+.panel-heading {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
