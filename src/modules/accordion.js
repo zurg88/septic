@@ -1,18 +1,15 @@
 const accordion = () => {
 	const accordion = document.getElementById('accordion'),
-		accordionItems = accordion.querySelectorAll('.panel'),
-		panelCollapse = accordion.querySelectorAll('.panel-collapse');
+		panelCollapse = accordion.querySelectorAll('.panel-collapse'),
+		panelHeading = accordion.querySelectorAll('.panel-heading'),
+		constructBtn = accordion.querySelectorAll('.construct-btn');
 
-	accordionItems.forEach(item => {
-		item.addEventListener('click', event => {
-			const collapse = item.querySelector('.panel-collapse'),
-				target = event.target;
 
-			if (collapse.classList.contains('in')) {
-				collapse.classList.remove('in');
-				return;
-			}
-			collapse.classList.add('in');
+	panelHeading.forEach(item => {
+		item.addEventListener('click', () => {
+
+			const collapse = item.nextElementSibling;
+			collapse.classList.toggle('in');
 
 			panelCollapse.forEach(elem => {
 				if (elem !== collapse) {
@@ -21,6 +18,33 @@ const accordion = () => {
 			});
 
 		});
+
+		const accordionNextButton = () => {
+			constructBtn.forEach(item => {
+				item.addEventListener('click', () => {
+					try {
+						const parentCollapseElement = item.closest('.panel-collapse'),
+							parentPanel = item.closest('.panel'),
+							nextPanel = parentPanel.nextElementSibling,
+							nextPanelCollapseElem = nextPanel.querySelector('.panel-collapse');
+
+						parentCollapseElement.classList.remove('in');
+
+						if (nextPanelCollapseElem.classList.contains('call-btn')) {
+							return;
+						}
+
+						nextPanelCollapseElem.classList.add('in');
+					} catch (error) {
+						return;
+					}
+
+				});
+			});
+		};
+
+		accordionNextButton();
+
 	});
 };
 

@@ -134,10 +134,8 @@
                     <div class="panel panel-default panel-one wow fadeInLeft">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                   aria-expanded="true" aria-controls="collapseOne">
+
                                     <span class="link-text">1. Тип септика</span>
-                                </a>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
@@ -154,8 +152,7 @@
                                 </div>
                                 <img class="type-septic" src="img/constructor/type-septic-two.png" alt="septic">
                                 <p>камерный</p>
-                                <a class="button construct-btn collapsed" data-toggle="collapse"
-                                   data-parent="#accordion" href="#collapseTwo"><span>Следующий шаг</span></a>
+                                <button class="button construct-btn">Следующий шаг</button>
                             </div>
                         </div>
                     </div>
@@ -163,10 +160,7 @@
                     <div class="panel panel-default panel-two wow fadeInRight" data-wow-delay="0.1s">
                         <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                   href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="link-text">2. Диаметр и количество колец</span>
-                                </a>
+                                    <span class="link-text">2. Диаметр и количество колец</span>                             
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
@@ -176,38 +170,39 @@
                                 <div class="title-text">первый колодец (приемный)</div>
                                 <div class="select-box">
                                     <p><strong>Диаметр</strong></p>
-                                    <select class="form-control expand">
+                                    <select class="form-control expand" id="first-well-diameter">
                                         <option>1.4 метра</option>
                                         <option>2 метра</option>
                                     </select>
                                 </div>
                                 <div class="select-box">
                                     <p><strong>Количество колец</strong></p>
-                                    <select class="form-control expand">
+                                    <select class="form-control expand" id="first-well-quantity">
                                         <option>1 штука</option>
                                         <option>2 штуки</option>
                                         <option>3 штуки</option>
+                                        <option>4 штуки</option>
                                     </select>
                                 </div>
-
-                                <div class="title-text">второй колодец (дренажный)</div>
-                                <div class="select-box">
-                                    <p><strong>Диаметр</strong></p>
-                                    <select class="form-control expand">
-                                        <option>1.4 метра</option>
-                                        <option>2 метра</option>
-                                    </select>
+                                <div class="second-well">
+                                    <div class="title-text">второй колодец (дренажный)</div>
+                                    <div class="select-box">
+                                        <p><strong>Диаметр</strong></p>
+                                        <select class="form-control expand" id="second-well-diameter">
+                                            <option>1.4 метра</option>
+                                            <option>2 метра</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-box">
+                                        <p><strong>Количество колец</strong></p>
+                                        <select class="form-control expand" id="second-well-quantity">
+                                            <option>1 штука</option>
+                                            <option>2 штуки</option>
+                                            <option>3 штуки</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="select-box">
-                                    <p><strong>Количество колец</strong></p>
-                                    <select class="form-control expand">
-                                        <option>1 штука</option>
-                                        <option>2 штуки</option>
-                                        <option>3 штуки</option>
-                                    </select>
-                                </div>
-                                <a class="button construct-btn" data-toggle="collapse" data-parent="#accordion"
-                                   href="#collapseThree"><span>Следующий шаг</span></a>
+                                <button class="button construct-btn">Следующий шаг</button>
                             </div>
                         </div>
                     </div>
@@ -215,10 +210,7 @@
                     <div class="panel panel-default panel-three wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="panel-heading" role="tab" id="headingThree">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                   href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <span class="link-text">3. Наличие днища колодца</span>
-                                </a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
@@ -228,15 +220,14 @@
 
                                 <div class="onoffswitch">
                                     <input type="checkbox" name="onoffswitch-two" class="onoffswitch-checkbox"
-                                           id="myonoffswitch-two" checked>
+                                           id="myonoffswitch-two">
                                     <label class="onoffswitch-label" for="myonoffswitch-two">
                                         <span class="onoffswitch-inner"></span>
                                         <span class="onoffswitch-switch"></span>
                                     </label>
                                 </div>
                                 <img class="bottom-septic-img" src="img/constructor/bottom-septic.png" alt="bs">
-                                <a class="button construct-btn" data-toggle="collapse" data-parent="#accordion"
-                                   href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span>Следующий шаг</span></a>
+                                <button class="button construct-btn">Следующий шаг</button>
                             </div>
                         </div>
                     </div>
@@ -244,10 +235,7 @@
                     <div class="panel panel-default panel-four wow fadeInRight" data-wow-delay="0.3s">
                         <div class="panel-heading" role="tab" id="headingFour">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                   href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <span class="link-text">4. Расстояние от септика до дома</span>
-                                </a>
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
