@@ -16,4 +16,14 @@ const callMeBtn = () => {
 	});
 };
 
+const closeItem = (item, itemClass) => {
+	item.classList.remove(itemClass);
+};
+
+const showItem = (item, itemClass) => {
+	item.classList.add(itemClass);
+};
+
+export { closeItem, showItem };
+
 export default callMeBtn;

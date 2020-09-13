@@ -7,8 +7,12 @@ const calculator = () => {
 		secondWellDiameter = document.getElementById('second-well-diameter'),
 		firstWellQuantity = document.getElementById('first-well-quantity'),
 		secondWellQuantity = document.getElementById('second-well-quantity'),
-		captureFormBtn = document.querySelector('.capture-form-btn'),
+		popupCall = document.querySelector('.popup-call'),
+		popupThanks = document.querySelector('.popup-thanks'),
+		captureForm = document.getElementById('calcForm'),
 		distanseToHomeInput = document.getElementById('distanseToHome'),
+		calcUserName = document.getElementById('name_1'),
+		calcUserPhone = document.getElementById('phone_1'),
 		calcData = { type: 'однокамерный',
 					firstWellDiameter: '1.4',
 					 firstWellQuantity: '1',
@@ -125,6 +129,8 @@ const calculator = () => {
 
 	calcWellCheckbox(myonoffswitch, count1, secondWell);
 
+	return calcData;
+
 };
 
-export default calculator;
+export { calculator };
