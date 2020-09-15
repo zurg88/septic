@@ -1,4 +1,4 @@
-import { closeItem, showItem } from './callMeBtn';
+import { closeItem, showItem } from './popup';
 import { calculator } from './calculator';
 
 const postData = body => fetch('./server.php', {
@@ -14,7 +14,6 @@ const clearInputData = input => {
 const callMeForms = () => {
 	const forms = document.querySelectorAll('form'),
 		popupThanks = document.querySelector('.popup-thanks'),
-		callPopup = document.querySelector('.popup-call'),
 		calcData = calculator(),
 		formData = {};
 
@@ -43,6 +42,12 @@ const callMeForms = () => {
 				formData[elem.name] = elem.value;
 			});
 
+			if (item.classList.contains('director-form')) {
+				const directorFormInput = item.querySelector('input');
+				clearInputData(directorFormInput);
+				return;
+			}
+
 			postData(formData).then(response => {
 				if (response.status !== 200) {
 					throw new Error('status network not 200');
@@ -51,7 +56,10 @@ const callMeForms = () => {
 				formInput.forEach(input => {
 					clearInputData(input);
 				});
-			}).then(closeItem(callPopup, 'show-popup'));
+			}).then(() => {
+				const activePopup = document.querySelector('.show-popup');
+				closeItem(activePopup, 'show-popup');
+			});
 		});
 
 	});

@@ -1,15 +1,16 @@
-const accordion = () => {
-	const accordion = document.getElementById('accordion'),
-		panelCollapse = accordion.querySelectorAll('.panel-collapse'),
+import fadeAnimation from './my-animation';
+
+const accordion = (accordion) => {
+	const panelCollapse = accordion.querySelectorAll('.panel-collapse'),
 		panelHeading = accordion.querySelectorAll('.panel-heading'),
 		constructBtn = accordion.querySelectorAll('.construct-btn');
-
 
 	panelHeading.forEach(item => {
 		item.addEventListener('click', () => {
 
 			const collapse = item.nextElementSibling;
 			collapse.classList.toggle('in');
+			fadeAnimation(collapse);
 
 			panelCollapse.forEach(elem => {
 				if (elem !== collapse) {
@@ -35,6 +36,7 @@ const accordion = () => {
 						}
 
 						nextPanelCollapseElem.classList.add('in');
+						fadeAnimation(nextPanelCollapseElem);
 					} catch (error) {
 						return;
 					}
