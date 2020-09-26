@@ -1,5 +1,9 @@
 'use strict';
 
+// css
+import '../css/main.css';
+
+// JS
 import popup from './modules/popup';
 import accordion from './modules/accordion';
 import { calculator } from './modules/calculator';

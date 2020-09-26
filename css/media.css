@@ -1,0 +1,493 @@
+@media (max-width:1199px) {
+	.logo p {
+		font-size: .9rem
+	}
+
+	main h2 .line {
+		margin-left: 71.4rem
+	}
+
+	main .img-box {
+		width: 24%
+	}
+
+	main .img-box img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%
+	}
+
+	.section-form .capture-form-btn {
+		width: 27rem
+	}
+
+	.constructor .tank-img {
+		margin-left: 5rem
+	}
+
+	.gauging h2 {
+		font-size: 3rem
+	}
+
+	.gauging p {
+		font-size: 1.5rem
+	}
+
+	.gauging img {
+		width: 140%
+	}
+
+	.director {
+		background: url(../img/director/director-bg-two.jpg) center no-repeat;
+		background-size: cover;
+		text-align: center
+	}
+
+	.director input {
+		margin-bottom: 0
+	}
+
+	.director-btn {
+		margin-top: 2rem;
+		margin-bottom: 7rem
+	}
+}
+
+@media (max-width:991px) {
+	.logo span {
+		letter-spacing: 0;
+		font-size: 1.1rem
+	}
+
+	.logo p {
+		font-size: .8rem
+	}
+
+	.name {
+		font-size: 1.1rem
+	}
+
+	.contacts p {
+		font-size: 1.5rem
+	}
+
+	.contacts a {
+		font-size: 1.2rem
+	}
+
+	main h2 .line {
+		margin-left: 60.4rem
+	}
+
+	main .block-color h4 {
+		margin-top: 5rem
+	}
+
+	main .img-box img {
+		width: 85%
+	}
+
+	main .main-form {
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	main .main-form-btn {
+		width: 27rem
+	}
+
+	.section-form {
+		text-align: center
+	}
+
+	.section-form p {
+		font-size: 1.6rem
+	}
+
+	.section-form .capture-form {
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.section-form .capture-form-btn {
+		width: 27rem
+	}
+
+	.constructor .tank-img {
+		margin-left: 4rem;
+		width: 80%
+	}
+
+	.sentence .sentence-btn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20rem
+	}
+
+	.gauging h2 {
+		font-size: 2.5rem;
+		margin-bottom: 2.5rem
+	}
+
+	.gauging .gauging-bold {
+		margin-top: 2.5rem;
+		font-size: 1.6rem
+	}
+
+	.gauging span {
+		font-size: 1.4rem;
+		margin-bottom: 5rem
+	}
+
+	.questions .panel-group {
+		width: 65rem
+	}
+}
+
+@media (max-width:767px) {
+	.logo {
+		width: 20rem;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.logo span {
+		font-size: 1.5rem
+	}
+
+	.name {
+		width: 30rem;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.contacts {
+		text-align: center;
+		width: 20rem;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	main h1 {
+		font-size: 2.6rem
+	}
+
+	main h2 .line {
+		display: none
+	}
+
+	main .main-form {
+		margin-top: 4rem;
+		width: 28rem
+	}
+
+	main .main-form h4 {
+		font-size: 2rem
+	}
+
+	main .main-form p {
+		font-size: 1.2rem;
+		line-height: 1.2
+	}
+
+	main .main-form label {
+		font-size: 1.3rem
+	}
+
+	main .main-form input {
+		width: 23rem;
+		height: 4rem;
+		margin-top: 1.4rem
+	}
+
+	main .main-form-btn {
+		width: 23rem;
+		height: 4rem;
+		padding: 0
+	}
+
+	.section-form h2 {
+		font-size: 2.5rem
+	}
+
+	.section-form p {
+		font-size: 1.2rem
+	}
+
+	.section-form .capture-form {
+		width: 29rem
+	}
+
+	.section-form .capture-form label {
+		font-size: 1.3rem
+	}
+
+	.section-form .capture-form input {
+		width: 23rem;
+		height: 4rem;
+		margin-top: 1.4rem
+	}
+
+	.section-form .capture-form-btn {
+		width: 23rem;
+		padding: 1rem 0
+	}
+
+	.constructor .construct-btn {
+		width: 23rem
+	}
+
+	.constructor .tank-img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 45%
+	}
+
+	.constructor .panel-one p {
+		margin-left: 9rem
+	}
+
+	.constructor .panel-two .select-box {
+		width: 11rem;
+		margin-right: 0;
+		margin-left: 1rem
+	}
+
+	.constructor .panel-two .select-box p {
+		font-size: 1.2rem
+	}
+
+	.constructor .panel-three .tool {
+		margin-left: .5rem
+	}
+
+	.constructor .panel-three .bottom-septic-img {
+		margin-left: 16rem
+	}
+
+	.constructor .panel-four input {
+		width: 23rem
+	}
+
+	.constructor .panel-four input::-webkit-input-placeholder {
+		padding-left: 14rem
+	}
+
+	.constructor .panel-four input:-ms-input-placeholder {
+		padding-left: 14rem
+	}
+
+	.constructor .panel-four input::-moz-placeholder {
+		padding-left: 14rem
+	}
+
+	.constructor .panel-four input::-ms-input-placeholder {
+		padding-left: 14rem
+	}
+
+	.constructor .panel-four input::placeholder {
+		padding-left: 14rem
+	}
+
+	.constructor .panel-group {
+		width: 28rem
+	}
+
+	.constructor .panel-group .panel-body .type-septic {
+		margin-left: 1.5rem
+	}
+
+	.constructor .panel-group .panel-body .onoffswitch {
+		margin-left: .5rem
+	}
+
+	.sentence h2 {
+		font-size: 2.5rem;
+		margin-bottom: 5rem
+	}
+
+	.sentence h3 {
+		font-size: 2rem
+	}
+
+	.gauging {
+		text-align: center
+	}
+
+	.gauging h2 {
+		font-size: 2rem;
+		margin-top: 4rem
+	}
+
+	.gauging p {
+		font-size: 1.25rem
+	}
+
+	.gauging .gauging-bold {
+		font-size: 1.4rem
+	}
+
+	.gauging img {
+		margin-left: 1rem;
+		width: 70%
+	}
+
+	.gauging span {
+		font-size: 1rem
+	}
+
+	.questions h2 {
+		font-size: 3rem
+	}
+
+	.questions .panel-group {
+		width: 100%
+	}
+
+	.questions .panel-group .panel-heading h4 {
+		font-size: 1.2rem
+	}
+
+	.director input {
+		width: 27rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.director-btn {
+		display: block;
+		margin-top: 2rem;
+		margin-bottom: 7rem;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.popup .capture-form {
+		width: 28rem
+	}
+
+	.popup .capture-form input {
+		width: 23rem;
+		height: 4rem
+	}
+
+	.popup .capture-form-btn {
+		width: 23rem;
+		height: 4rem;
+		padding: 0
+	}
+}
+
+
+@media (max-width: 575px) {
+	.director {
+		padding: 0;
+	}
+
+	#calc-result,
+	.constructor .panel-group,
+	.section-form .capture-form,
+	main .main-form,
+	header .name,
+	.director input,
+	.button {
+		width: 25rem;
+	}
+
+	.constructor .panel-three .construct-btn,
+	.constructor .panel-one .construct-btn,
+	.constructor .panel-two .construct-btn,
+	.constructor .panel-four .construct-btn,
+	.constructor .panel-four input {
+		width: 22rem;
+	}
+
+	.gauging .row {
+		flex-direction: column;
+	}
+
+	main .main-form .stock {
+		font-size: 1.5rem;
+	}
+	.sentence .add-sentence-btn {
+		display: none;
+	}
+
+	.sentence {
+		margin: 2rem 0;
+	}
+  }
+
+@media (max-width:320px) {
+	main h1 {
+		font-size: 2.5rem
+	}
+
+	main h3 {
+		font-size: 1.4rem
+	}
+
+	main h4 {
+		font-size: 1.5rem
+	}
+
+	main .img-box {
+		width: 49%
+	}
+
+	main .main-form {
+		margin-top: 2rem
+	}
+
+	.section-form h2 {
+		font-size: 2rem
+	}
+
+	.section-form .capture-form {
+		width: 29rem
+	}
+
+	.constructor .panel-group {
+		width: 29rem
+	}
+
+	.constructor .panel-group .panel-body .type-septic {
+		margin-left: 1.5rem
+	}
+
+	.constructor .panel-group .panel-body .onoffswitch {
+		margin-left: 2.5rem
+	}
+
+	.sentence h2 {
+		font-size: 2.3rem
+	}
+
+	.sentence h3 {
+		font-size: 1.5rem;
+		margin-top: 3rem;
+		margin-bottom: 0
+	}
+
+	.questions h2 {
+		font-size: 2.5rem;
+		margin-top: 3rem;
+		margin-bottom: 3rem
+	}
+
+	.questions .panel-group .panel-heading {
+		padding-top: 2rem
+	}
+
+	.director span {
+		font-size: 1.5rem
+	}
+
+	.director p {
+		font-size: 1.5rem
+	}
+}
